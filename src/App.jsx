@@ -162,7 +162,14 @@ function Navbar() {
           <a href={data.links.github} className="p-2 rounded hover:bg-black/5" aria-label="GitHub">
             <IconGithub />
           </a>
-          <a href={data.links.resume} className="text-sm border rounded px-3 py-1 hover:bg-black/5">Resume</a>
+          <a 
+ 	    href={data.links.resume} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-sm border rounded px-3 py-1 hover:bg-black/5"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </header>
