@@ -193,7 +193,7 @@ function Hero() {
         <div className="md:col-span-1">
           <div className="aspect-square rounded-2xl border shadow-sm flex items-center justify-center">
             <img
-              src="/headshot.jpg"
+              src="/headshot.png"
               alt="John Fulton"
               className="w-full h-full object-cover"
             >
