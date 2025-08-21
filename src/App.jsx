@@ -192,7 +192,12 @@ function Hero() {
         </div>
         <div className="md:col-span-1">
           <div className="aspect-square rounded-2xl border shadow-sm flex items-center justify-center">
-            <span className="text-sm text-black/50">Add a headshot here</span>
+            <img
+              src="/headshot.jpg"
+              alt="John Fulton"
+              className="w-full h-full object-cover"
+            >
+            </img>
           </div>
         </div>
       </div>
