@@ -94,10 +94,20 @@ const data = {
     {
       place: "Wegmans",
       role: "In‑Store Shopper (Part‑time)",
-      time: "2024–2025",
+      time: "2020–",
       bullets: [
-        "Coordinated time‑sensitive orders with 99% accuracy",
-        "Automated a shift‑prep checklist web tool (personal project) to reduce errors"
+        "Fulfilled and optimized online customer orders via Instacart for 250+ customers",
+        "Provided consistent, high-quality customer service under time constraints",
+	"Supported management with performance insights and team communication"
+      ]
+    },
+    {
+     place: "George Mason University",
+     role: "Undergraduate Teaching Assistant",
+     time: "2024-2024",
+     bullets: [
+       "Led weekly recitation sessions for 30+ students in computer science fundamentals",
+       "Coordinated with faculty to streamline grading and student support"
       ]
     },
     {
