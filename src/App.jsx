@@ -182,7 +182,7 @@ function Hero() {
       <div className="grid md:grid-cols-3 gap-8 items-center">
         <div className="md:col-span-2">
           <p className="text-sm tracking-widest uppercase text-black/70">{data.role}</p>
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mt-2">Hi, I’m {data.name.split(' ')[0]}.</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mt-2">Hi, I’m {data.name}.</h1>
           <p className="mt-4 text-black/80 leading-relaxed">{data.blurb}</p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a href="#projects" className="rounded-xl px-4 py-2 text-sm font-medium border hover:bg-black/5">View Projects</a>
@@ -193,7 +193,7 @@ function Hero() {
         <div className="md:col-span-1">
           <div className="aspect-square rounded-2xl border shadow-sm overflow-hidden">
             <img
-              src="/headshot.png"
+              src="/headshot.webp"
               alt="John Fulton"
               className="block w-full h-full object-cover"
             >
