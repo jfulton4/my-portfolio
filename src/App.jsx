@@ -294,7 +294,7 @@ function Contact() {
       <div className="grid md:grid-cols-2 gap-6">
         <div className="rounded-2xl border p-4 shadow-sm">
           <h4 className="font-semibold">Get in touch</h4>
-          <p className="text-sm text-black/80 mt-1">Prefer email? Click below to open your mail client with a prefilled subject.</p>
+          <p className="text-sm text-black/80 mt-1">Prefer email? Click below.</p>
           <a
             href={`${data.links.email}?subject=${encodeURIComponent("Hello from your portfolio site")}`}
             className="inline-flex items-center gap-2 mt-3 border rounded-xl px-3 py-2 text-sm hover:bg-black/5"
