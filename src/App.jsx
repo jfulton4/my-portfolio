@@ -37,7 +37,7 @@ const data = {
   skills: [
     "Java", "CI/CD",
     "JavaScript","React", "Vite", "Tailwind",
-    "Python", "C", "SQL", "NoSQL"
+    "Python", "C", "SQL", "NoSQL", "Netlify",
   ],
   projects: [
     /*
@@ -85,7 +85,7 @@ const data = {
         title: "Personal Portfolio Website",
         description:
           "Single-page React site with Tailwind, deployed on Netlify with a custom domain and HTTPS. Optimized images (WebP) and added favicon + Apple touch icon.",
-        tags: ["React", "Tailwind", "Vite", "Netlify", "DNS/HTTPS"],
+        tags: ["React", "Tailwind", "Vite", "Netlify"],
         links: {
           demo: "https://johnfulton.dev",
           github: "https://github.com/jfulton4/my-portfolio"
