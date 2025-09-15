@@ -1,13 +1,3 @@
-// John's Portfolio – single-file React + Tailwind starter
-// How to use locally:
-// 1) Create a new Vite React app: `npm create vite@latest my-portfolio -- --template react`
-// 2) `cd my-portfolio && npm install`
-// 3) Add Tailwind (optional but recommended). This starter uses Tailwind utility classes.
-//    If you skip Tailwind for now, it will still render, just with minimal styling.
-// 4) Replace App.jsx contents with this file's default export (or copy the component into App.jsx).
-// 5) Put a PDF resume at /public/resume.pdf (or update the link below).
-// 6) Deploy to GitHub Pages, Netlify, or Vercel.
-
 import { useMemo, useState } from "react";
 
 // Simple icon components (inline SVG to avoid external deps)
@@ -186,7 +176,7 @@ function Hero() {
           <p className="mt-4 text-black/80 leading-relaxed">{data.blurb}</p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a href="#projects" className="rounded-xl px-4 py-2 text-sm font-medium border hover:bg-black/5">View Projects</a>
-            <a href={data.links.resume} className="rounded-xl px-4 py-2 text-sm font-medium border hover:bg-black/5">Download Resume</a>
+            <a href={data.links.resume} download="John_Fulton_Resume.pdf" className="rounded-xl px-4 py-2 text-sm font-medium border hover:bg-black/5">Download Resume</a>
             <a href={data.links.linkedin} className="rounded-xl px-4 py-2 text-sm font-medium border hover:bg-black/5">LinkedIn</a>
           </div>
         </div>
