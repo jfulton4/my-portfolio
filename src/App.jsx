@@ -35,11 +35,12 @@ const data = {
     resume: "/resume.pdf",
   },
   skills: [
-    "Java", "Spring Boot", "REST", "PostgreSQL", "Docker", "CI/CD",
-    "JavaScript", "TypeScript", "React", "Vite", "Tailwind", "Node.js",
-    "Python", "FastAPI", "Pandas", "Data Viz"
+    "Java", "CI/CD",
+    "JavaScript","React", "Vite", "Tailwind",
+    "Python", "C", "SQL", "NoSQL"
   ],
   projects: [
+    /*
     {
       title: "HIT Workout Logger",
       description:
@@ -79,34 +80,36 @@ const data = {
         "Role‑specific resume export"
       ]
     }
+    */
+    {
+        title: "Personal Portfolio Website",
+        description:
+          "Single-page React site with Tailwind, deployed on Netlify with a custom domain and HTTPS. Optimized images (WebP) and added favicon + Apple touch icon.",
+        tags: ["React", "Tailwind", "Vite", "Netlify", "DNS/HTTPS"],
+        links: {
+          demo: "https://johnfulton.dev",
+          github: "https://github.com/jfulton4/my-portfolio"
+        }
+    }
   ],
   experience: [
     {
       place: "Wegmans",
       role: "In‑Store Shopper (Part‑time)",
-      time: "2020–",
+      time: "October 2020 –",
       bullets: [
         "Fulfilled and optimized online customer orders via Instacart for 250+ customers",
         "Provided consistent, high-quality customer service under time constraints",
-	"Supported management with performance insights and team communication"
+	    "Supported management with performance insights and team communication"
       ]
     },
     {
      place: "George Mason University",
      role: "Undergraduate Teaching Assistant",
-     time: "2024-2024",
+     time: "January 2024 - May 2024",
      bullets: [
        "Led weekly recitation sessions for 30+ students in computer science fundamentals",
        "Coordinated with faculty to streamline grading and student support"
-      ]
-    },
-    {
-      place: "GMU Projects",
-      role: "Course & Independent Projects",
-      time: "2023–2025",
-      bullets: [
-        "CS capstones in web dev and data",
-        "Built multiple small production‑style apps"
       ]
     }
   ]
