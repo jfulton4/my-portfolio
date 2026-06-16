@@ -88,7 +88,7 @@ const data = {
             description:
                 "Built and deployed a globally accessible URL shortener using CloudFront, S3, API Gateway, Lambda, and DynamoDB.",
             tags: ["AWS Lambda", "DynamoDB", "CloudFront", "S3", "API Gateway"],
-            demo: "cutit.app",
+            demo: "https://cutit.app",
             highlights: [
                 "Custom short codes",
                 "Configurable link expiration",
