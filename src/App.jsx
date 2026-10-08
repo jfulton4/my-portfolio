@@ -14,6 +14,12 @@ const IconGithub = (props) => (
     </svg>
 );
 
+const IconLinkedIn = (props) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+    </svg>
+);
+
 const IconExternal = (props) => (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={props.className || "w-5 h-5"}>
         <path d="M18 3h3v3" />
@@ -42,47 +48,6 @@ const data = {
         "API Gateway", "S3",
     ],
     projects: [
-        /*
-        {
-          title: "HIT Workout Logger",
-          description:
-            "Single‑set‑to‑failure tracker with tempo, RIR, and progression graphs. Exports CSV, calculates progressive overload targets.",
-          tags: ["React", "Node", "PostgreSQL", "Recharts"],
-          repo: "https://github.com/your-username/hit-logger",
-          demo: "https://hit-logger-demo.example.com",
-          highlights: [
-            "Custom hook for micro‑cycle planning",
-            "Server‑side cron computes next‑session targets",
-            "Accessible UI with keyboard shortcuts"
-          ]
-        },
-        {
-          title: "Sleep & Biomarker Dashboard",
-          description:
-            "Aggregates wearable sleep metrics and lab biomarkers into a single timeline. Trend analysis and alert thresholds.",
-          tags: ["React", "FastAPI", "SQLite", "D3"],
-          repo: "https://github.com/your-username/sleep-biomarkers",
-          demo: "https://sleep-biomarkers.example.com",
-          highlights: [
-            "CSV/JSON import with schema validation",
-            "Signal smoothing (EMA) and anomaly flags",
-            "Shareable read‑only views"
-          ]
-        },
-        {
-          title: "Job Application Manager",
-          description:
-            "Track applications, notes, and follow‑ups. Generates tailored cover letters from role keywords.",
-          tags: ["Spring Boot", "React", "Postgres"],
-          repo: "https://github.com/your-username/job-manager",
-          demo: "https://job-manager.example.com",
-          highlights: [
-            "Keyword extraction → bullet suggestions",
-            "Kanban board + reminders",
-            "Role‑specific resume export"
-          ]
-        }
-        */
         {
             title: "Serverless URL Shortener",
             description:
@@ -113,11 +78,19 @@ const data = {
     ],
     experience: [
         {
+            place: "EagleForce Associates",
+            role: "Software Developer",
+            time: "August 2026 -"
+            bullets: [
+                "Building a RESTful API with Ruby On Rails to detect Maximizer and Accumulator claims for pharmaceutical manufacturers.",
+                "Utilizing MySQL to store patient data securely on AWS RDS",
+                "Performing data analytics on historial patient claims data to extract patterns and insights that can be used to inform business rules/logic" 
+        {
             place: "Wegmans Food Markets",
             role: "In‑Store Shopper",
-            time: "October 2020 –",
+            time: "October 2020 – August 2026",
             bullets: [
-                "Fulfilled and optimized online customer orders via Instacart for 250+ customers", 
+                "Fulfilled and optimized online customer orders via Instacart for 500+ customers", 
                 "Analyzed order trends to optimize shopping efficiency and customer satisfaction", 
                 "Collaborated with management to improve digital order fulfillment processes", 
                 "Recipient of the Wegmans Scholarship from 2022–2025"
@@ -155,7 +128,6 @@ function Section({ id, title, children }) {
 
 function Navbar() {
     const items = [
-        { href: "#about", label: "About" },
         { href: "#skills", label: "Skills" },
         { href: "#projects", label: "Projects" },
         { href: "#experience", label: "Experience" },
@@ -173,6 +145,9 @@ function Navbar() {
                     ))}
                 </nav>
                 <div className="flex items-center gap-3">
+                    <a href={data.links.linkedin} className="p-2 rounded hover:bg-black/5 aria-label="LinkedIn">
+                        <IconLinkedIn />
+                    </a>
                     <a href={data.links.github} className="p-2 rounded hover:bg-black/5" aria-label="GitHub">
                         <IconGithub />
                     </a>
@@ -198,12 +173,6 @@ function Hero() {
                     <p className="text-sm tracking-widest uppercase text-black/70">{data.role}</p>
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight mt-2">Hi, I’m {data.name}.</h1>
                     <p className="mt-4 text-black/80 leading-relaxed">{data.blurb}</p>
-                    <div className="mt-6 flex flex-wrap gap-3">
-                        <a href="#projects" className="rounded-xl px-4 py-2 text-sm font-medium border hover:bg-black/5">View Projects</a>
-                        <a href={data.links.resume} download="John_Fulton_Resume.pdf" className="rounded-xl px-4 py-2 text-sm font-medium border hover:bg-black/5">Download Resume</a>
-                        <a href={data.links.linkedin} className="rounded-xl px-4 py-2 text-sm font-medium border hover:bg-black/5">LinkedIn</a>
-                    </div>
-                </div>
                 <div className="md:col-span-1">
                     <div className="aspect-square rounded-2xl border shadow-sm overflow-hidden">
                         <img
