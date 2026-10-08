@@ -146,7 +146,7 @@ function Navbar() {
                     ))}
                 </nav>
                 <div className="flex items-center gap-3">
-                    <a href={data.links.linkedin} className="p-2 rounded hover:bg-black/5 aria-label="LinkedIn">
+                    <a href={data.links.linkedin} className="p-2 rounded hover:bg-black/5" aria-label="LinkedIn">
                         <IconLinkedIn />
                     </a>
                     <a href={data.links.github} className="p-2 rounded hover:bg-black/5" aria-label="GitHub">
