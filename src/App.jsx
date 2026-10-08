@@ -86,6 +86,7 @@ const data = {
                 "Utilizing MySQL to store patient data securely on AWS RDS",
                 "Performing data analytics on historial patient claims data to extract patterns and insights that can be used to inform business rules/logic"
             ]
+        }
         {
             place: "Wegmans Food Markets",
             role: "In‑Store Shopper",
