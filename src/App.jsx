@@ -207,7 +207,7 @@ function Projects() {
     return (
         <Section id="projects" title="Projects">
             <div className="grid md:grid-cols-2 gap-6">
-                {filtered.map((p) => (
+                {data.projects.map((p) => (
                     <article key={p.title} className="rounded-2xl border p-4 shadow-sm bg-white">
                         <div className="flex items-start justify-between gap-4">
                             <h3 className="text-lg font-semibold tracking-tight">{p.title}</h3>
