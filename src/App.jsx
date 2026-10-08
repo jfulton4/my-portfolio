@@ -172,7 +172,6 @@ function Hero() {
         <section id="home" className="max-w-5xl mx-auto px-4 md:px-6 py-10 md:py-16">
             <div className="grid md:grid-cols-3 gap-8 items-center">
                 <div className="md:col-span-2">
-                    <p className="text-sm tracking-widest uppercase text-black/70">{data.role}</p>
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight mt-2">Hi, I’m {data.name}.</h1>
                     <p className="mt-4 text-black/80 leading-relaxed">{data.blurb}</p>
                 </div>
@@ -304,7 +303,7 @@ export default function PortfolioSite() {
                 <Contact />
             </main>
             <footer className="border-t py-8 text-center text-xs text-black/60">
-                © {new Date().getFullYear()} {data.name}. Built with React.
+                Thanks for stopping by! If you'd like to get in touch with me, message me on LinkedIn.
             </footer>
         </div>
     );
