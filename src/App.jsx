@@ -175,6 +175,7 @@ function Hero() {
                     <p className="text-sm tracking-widest uppercase text-black/70">{data.role}</p>
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight mt-2">Hi, I’m {data.name}.</h1>
                     <p className="mt-4 text-black/80 leading-relaxed">{data.blurb}</p>
+                </div>
                 <div className="md:col-span-1">
                     <div className="aspect-square rounded-2xl border shadow-sm overflow-hidden">
                         <img
