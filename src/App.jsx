@@ -204,24 +204,8 @@ function Skills() {
 }
 
 function Projects() {
-    const [query, setQuery] = useState("");
-    const filtered = useMemo(() => {
-        const q = query.toLowerCase();
-        return data.projects.filter(
-            (p) => p.title.toLowerCase().includes(q) || p.tags.join(" ").toLowerCase().includes(q)
-        );
-    }, [query]);
-
     return (
         <Section id="projects" title="Projects">
-            <div className="mb-4 flex items-center gap-3">
-                <input
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Filter by title or tag…"
-                    className="w-full sm:w-80 rounded-xl border px-3 py-2 text-sm focus:outline-none focus:ring"
-                />
-            </div>
             <div className="grid md:grid-cols-2 gap-6">
                 {filtered.map((p) => (
                     <article key={p.title} className="rounded-2xl border p-4 shadow-sm bg-white">
