@@ -82,15 +82,15 @@ const data = {
             role: "Software Developer",
             time: "August 2026 -",
             bullets: [
-                "Building a RESTful API with Ruby On Rails to detect Maximizer and Accumulator claims for pharmaceutical manufacturers.",
-                "Utilizing MySQL to store patient data securely on AWS RDS",
-                "Performing data analytics on historial patient claims data to extract patterns and insights that can be used to inform business rules/logic"
+                "Building a RESTful API with Ruby On Rails to detect copay maximizer and accumulator claims for pharmaceutical manufacturers.",
+                "Utilizing MySQL to store patient data securely on an AWS-hosted stack",
+                "Analyzing historical patient claims data to extract patterns and insights that can be used to inform business rules/logic"
             ]
         },
         {
             place: "Wegmans Food Markets",
             role: "In‑Store Shopper",
-            time: "October 2020 – August 2026",
+            time: "October 2020 - August 2026",
             bullets: [
                 "Fulfilled and optimized online customer orders via Instacart for 500+ customers", 
                 "Analyzed order trends to optimize shopping efficiency and customer satisfaction", 
@@ -244,7 +244,7 @@ function Projects() {
 function Experience() {
     return (
         <Section id="experience" title="Experience">
-            <ol className="relative border-s">
+            <ol className="relative before:absolute before:start-0 before:top-3 before:bottom-0 before:border-s">
                 {data.experience.map((e) => (
                     <li key={e.place} className="ms-4 mb-6">
                         <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border bg-white" />
