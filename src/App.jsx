@@ -244,7 +244,7 @@ function Projects() {
 function Experience() {
     return (
         <Section id="experience" title="Experience">
-            <ol className="relative before:absolute before:start-0 before:top-3 before:bottom-0 before:border-s">
+            <ol className="relative before:absolute before:start-0 before:top-3 before:bottom-0 before:border-s before:-translate-x-1/2">
                 {data.experience.map((e) => (
                     <li key={e.place} className="ms-4 mb-6">
                         <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border bg-white" />
