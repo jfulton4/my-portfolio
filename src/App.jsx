@@ -80,9 +80,9 @@ const data = {
         {
             place: "EagleForce Associates",
             role: "Software Developer",
-            time: "August 2026 -",
+            time: "August 2026 - Present",
             bullets: [
-                "Building a RESTful API with Ruby On Rails to detect copay maximizer and accumulator claims for pharmaceutical manufacturers.",
+                "Building a RESTful API with Ruby on Rails to detect copay maximizer and accumulator claims for pharmaceutical manufacturers.",
                 "Utilizing MySQL to store patient data securely on an AWS-hosted stack",
                 "Analyzing historical patient claims data to extract patterns and insights that can be used to inform business rules/logic"
             ]
